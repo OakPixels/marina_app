@@ -1,0 +1,256 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="row">
+  <div id="map" class="col-sm-9 map cmap dark">
+    <h6 id="date"></h6>
+    <div id="land" class="landDark">
+    </div>
+    <div id="land2" class="landDark">
+    </div>
+    <div id="land3" class="col-sm-10 landDark">
+    </div>
+    <div id="gangway">
+    </div>
+    <div class="pontoon" id="apon">
+      <h6 style="position:absolute; top: -25px;">A</h6>
+    </div>
+    <div class="pontoon" id="reception">
+    </div>
+    <div class="ab boat" onmouseover="getData('A1')" style="top: 385px;"id="A1">
+    </div>
+    <div class="ab boat" onmouseover="getData('A2')" style="top: 350px;"id="A2">
+    </div>
+    <div class="ab boat" onmouseover="getData('A3')" style="top: 315px;"id="A3">
+    </div>
+    <div class="ab boat" onmouseover="getData('A4')" style="top: 280px;" id="A4">
+    </div>
+    <div class="ab boat" onmouseover="getData('A5')" style="top: 245px;" id="A5">
+    </div>
+    <div class="ab boat" onmouseover="getData('A6')" style="top: 210px;" id="A6">
+    </div>
+    <div class="ab boat" onmouseover="getData('A7')" style="top: 175px;" id="A7">
+    </div>
+    <div class="ab boat" onmouseover="getData('A8')" style="top: 140px;" id="A8">
+    </div>
+    <div class="ab boat" onmouseover="getData('A9')" style="top: 105px;" id="A9">
+    </div>
+    <div class="ab boat" onmouseover="getData('A10')" style="top: 70px;" id="A10">
+    </div>
+    <div class="pontoon" id="bpon">
+      <h6 style="position:absolute; top: -40px; left: 100px;">B</h6>
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B1')" style="left: 285px;" id="B1">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B2')" style="left: 310px;" id="B2">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B3')" style="left: 335px;" id="B3">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B4')" style="left: 360px;" id="B4">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B5')" style="left: 385px;" id="B5">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B6')" style="left: 410px;" id="B6">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B7')" style="left: 435px;" id="B7">
+    </div>
+    <div class="bb boat bup" onmouseover="getData('B8')" style="left: 460px;" id="B8">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B9')" style="left: 285px;" id="B9">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B10')" style="left: 310px;" id="B10">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B11')" style="left: 335px;" id="B11">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B12')" style="left: 360px;" id="B12">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B13')" style="left: 390px;" id="B13">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B14')" style="left: 422px;" id="B14">
+    </div>
+    <div class="bb boat bdown" onmouseover="getData('B15')" style="left: 455px;" id="B15">
+    </div>
+    <div id="cp">
+      <div class="pontoon" id="cpon">
+        <h6 style="position:absolute; top: -25px;">C</h6>
+      </div>
+      <div class="cfin pontoon" style="top: 140px;">
+      </div>
+      <div class="cfin pontoon" style="top: 180px;">
+      </div>
+      <div class="cfin pontoon" style="top: 220px;">
+      </div>
+      <div class="cfin pontoon" style="top: 260px;">
+      </div>
+      <div class="cfin pontoon" style="top: 300px;">
+      </div>
+      <div class="cfin pontoon" style="top: 340px;">
+      </div>
+      <div class="cfin pontoon" style="top: 380px;">
+      </div>
+      <div class="cb boat" onmouseover="getData('C2')" style="top: 375px;" id="C2">
+      </div>
+      <div class="cb boat" onmouseover="getData('C3')" style="top: 320px;" id="C3">
+      </div>
+      <div class="cb boat" onmouseover="getData('C4')" style="top: 285px;" id="C4">
+      </div>
+      <div class="cb boat" onmouseover="getData('C5')" style="top: 250px;" id="C5">
+      </div>
+      <div class="cb boat" onmouseover="getData('C6')" style="top: 215px;" id="C6">
+      </div>
+      <div class="cb boat" onmouseover="getData('C7')" style="top: 180px;" id="C7">
+      </div>
+      <div class="cb boat" onmouseover="getData('C8')" style="top: 145px;" id="C8">
+      </div>
+      <div class="cb boat" onmouseover="getData('C9')" style="top: 110px;" id="C9">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C10')" style="top: 128px;" id="C10">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C11')" style="top: 152px;" id="C11">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C12')" style="top: 168px;" id="C12">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C13')" style="top: 192px;" id="C13">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C14')" style="top: 208px;" id="C14">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C15')" style="top: 232px;" id="C15">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C16')" style="top: 248px;" id="C16">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C17')" style="top: 272px;" id="C17">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C18')" style="top: 288px;" id="C18">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C19')" style="top: 312px;" id="C19">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C20')" style="top: 328px;" id="C20">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C21')" style="top: 352px;" id="C21">
+      </div>
+      <div class="cfb boat" onmouseover="getData('C22')" style="top: 368px;" id="C22">
+      </div>
+      <div class="cfb boat boat" onmouseover="getData('C23')" style="top: 392px;" id="C23">
+      </div>
+      <div class="cb boat" onmouseover="getData('C24')" style="top: 410px; left: 490px;" id="C24">
+      </div>
+    </div>
+    <div id="dp">
+      <div class="pontoon" id="dpon">
+        <h6 style="position:absolute; top: 30px; left: 150px;">D</h6>
+      </div>
+      <div class="pontoon" id="dp1">
+      </div>
+      <div class="pontoon" id="dp2">
+      </div>
+      <div class="dab boat" onmouseover="getData('D1')" style="top: 462px; left: 360px;" id="D1">
+      </div>
+      <div class="dab boat" onmouseover="getData('D2')" style="top: 505px; left: 372px;" id="D2">
+      </div>
+      <div class="dab boat" onmouseover="getData('D3')" style="top: 535px; left: 380px;" id="D3">
+      </div>
+      <div class="db boat" onmouseover="getData('D4')" style="left: 400px;" id="D4">
+      </div>
+      <div class="db boat" onmouseover="getData('D6')" style="left: 443px;" id="D6">
+      </div>
+      <div class="db boat" onmouseover="getData('D8')" style="left: 486px;" id="D8">
+      </div>
+      <div class="db boat" onmouseover="getData('D10')" style="left: 529px;" id="D10">
+      </div>
+      <div class="db boat" onmouseover="getData('D12')" style="left: 572px;" id="D12">
+      </div>
+      <div class="db boat" onmouseover="getData('D14')" style="left: 615px;" id="D14">
+      </div>
+      <div class="db boat" onmouseover="getData('D15')" style="left: 658px;" id="D15">
+      </div>
+      <div class="db boat" onmouseover="getData('D16')" style="left: 701px;" id="D16">
+      </div>
+      <div class="df pontoon" style="left: 440px;">
+      </div>
+      <div class="df pontoon" style="left: 480px;">
+      </div>
+      <div class="df pontoon" style="left: 520px;">
+      </div>
+      <div class="df pontoon" style="left: 560px;">
+      </div>
+      <div class="df pontoon" style="left: 600px;">
+      </div>
+      <div class="df pontoon" style="left: 640px;">
+      </div>
+      <div class="df pontoon" style="left: 680px;">
+      </div>
+      <div class="df pontoon" style="left: 720px;">
+      </div>
+      <div onmouseover="getData('D17')" class="dfb boat" style="left: 732px;" id="D17">
+      </div>
+      <div onmouseover="getData('D18')" class="dfb boat" style="left: 707px;" id="D18">
+      </div>
+      <div onmouseover="getData('D19')" class="dfb boat" style="left: 692px;" id="D19">
+      </div>
+      <div onmouseover="getData('D20')" class="dfb boat" style="left: 667px;" id="D20">
+      </div>
+      <div onmouseover="getData('D21')" class="dfb boat" style="left: 652px;" id="D21">
+      </div>
+      <div onmouseover="getData('D22')" class="dfb boat" style="left: 627px;" id="D22">
+      </div>
+      <div onmouseover="getData('D23')" class="dfb boat" style="left: 612px;" id="D23">
+      </div>
+      <div onmouseover="getData('D24')" class="dfb boat" style="left: 587px;" id="D24">
+      </div>
+      <div onmouseover="getData('D25')" class="dfb boat" style="left: 572px;" id="D25">
+      </div>
+      <div onmouseover="getData('D26')" class="dfb boat" style="left: 547px;" id="D26">
+      </div>
+      <div onmouseover="getData('D27')" class="dfb boat" style="left: 532px;" id="D27">
+      </div>
+      <div onmouseover="getData('D28')" class="dfb boat" style="left: 507px;" id="D28">
+      </div>
+      <div onmouseover="getData('D29')" class="dfb boat" style="left: 492px;" id="D29">
+      </div>
+      <div onmouseover="getData('D30')" class="dfb boat" style="left: 467px;" id="D30">
+      </div>
+      <div onmouseover="getData('D31')" class="dfb boat" style="left: 452px;" id="D31">
+      </div>
+      <div onmouseover="getData('D32')" class="dfb boat" style="left: 427px;" id="D32">
+      </div>
+      <div onmouseover="getData('D33')" class="dab boat" style="top: 518px; left: 405px;" id="D33">
+      </div>
+      <div onmouseover="getData('D34')" class="dab boat" style="top: 488px; left: 402px;" id="D34">
+      </div>
+      <div onmouseover="getData('D35')" class="dab boat" style="top: 460px; left: 392px;" id="D35">
+      </div>
+
+    </div>
+  </div>
+  <div id="data" class="col-sm-3">
+    <p id="bloc">Hover over a pontoon</p>
+    <p id="bname"></p>
+    <p id="blength" style="text-align: center;"></p>
+    <hr />
+    <p id="bowner"></p>
+    <p id="bremark"></p>
+    <p id="bphone"></p>
+    <p id="bpaid"></p>
+    <hr/>
+    <div style="text-align: center;">
+      <p>Map Settings</p>
+      <button class="btn btn-info" onClick="satellite()">Satellite</button>
+      <button class="btn btn-info" onClick="cartoon()">Simple</button>
+      <br />
+      <div id="colorbut">
+        <button class="btn btn-info" onClick="light()">Light</button>
+        <button class="btn btn-info" onClick="dark()">Dark</button>
+      </div>
+      <form action="/logout">
+        <button class="btn btn-info" type="submit">Logout</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  /* Send Variables to JS */
+  const boaty = {{boats|safe}};
+</script>
+<script type="text/javascript" src="static/my.js"></script>
+
+{% endblock %}

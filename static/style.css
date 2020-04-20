@@ -1,0 +1,255 @@
+/* Home page */
+/* Map */
+.map {
+  height: 100vh;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+}
+.cmap {
+  background-size:1130px 670px;
+}
+.gmap {
+  background-image: url("/static/pics/mapg.jpg");
+  background-size:1090px 745px;
+}
+.dark {
+  background-color: #4d9cf0;
+}
+.light {
+  background-color: #87CEEB;
+}
+.landDark {
+  background-color: #68bd87;
+}
+.landLight {
+  background-color: #86C29C;
+}
+#land {
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 240px;
+  position: absolute;
+  border-radius: 5%;
+}
+#land2 {
+  top: 480px;
+  left: 200px;
+  height: 185px;
+  width: 100px;
+  position: absolute;
+  border-radius: 5%;
+}
+#land3 {
+  top: 620px;
+  height: 150px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  border-radius: 5%;
+}
+#reception {
+  top: 350px;
+  height: 92px;
+  left: 258px;
+  width: 30px;
+}
+#gangway {
+  top: 442px;
+  left: 260px;
+  height: 40px;
+  width: 8px;
+  position: absolute;
+  background-color: #f0ce8e;
+}
+.pontoon {
+  position: absolute;
+  background-color: #f0ce8e;
+}
+#apon {
+  top: 70px;
+  left: 275px;
+  height: 350px;
+  width: 13px;
+}
+#bpon {
+  left: 285px;
+  top: 430px;
+  height: 13px;
+  width: 200px;
+}
+#cpon {
+  top: 110px;
+  left: 475px;
+  height: 333px;
+  width: 13px;
+}
+#dpon {
+  left: 400px;
+  top: 545px;
+  height: 13px;
+  width: 350px;
+}
+.boat {
+  position: absolute;
+  display: none;
+  border-radius: 25%;
+}
+.ab {
+  left: 291px;
+  height: 25px;
+  width: 11px;
+}
+.ab:hover {
+  background-color: red;
+}
+.bb {
+  height: 11px;
+  width: 25px;
+}
+.bb:hover {
+  background-color: red;
+}
+.bup {
+  top: 416px;
+}
+.bdown {
+  top: 446px;
+}
+.cb {
+  left: 460px;
+  height: 25px;
+  width: 11px;
+}
+.cb:hover {
+  background-color: red;
+}
+.cfin {
+  left: 487px;
+  width: 35px;
+  height: 10px;
+}
+.cfb {
+  left: 490px;
+  width: 25px;
+  height: 10px;
+}
+.cfb:hover {
+  background-color: red;
+}
+#dp1 {
+  top: 443px;
+  left: 375px;
+  height: 30px;
+  width: 13px;
+}
+#dp2 {
+  top: 470px;
+  left: 385px;
+  height: 87px;
+  width: 13px;
+  transform: rotate(-14deg);
+}
+.dab {
+  height: 25px;
+  width: 12px;
+  transform: rotate(-14deg);
+}
+.dab:hover {
+  background-color: red;
+}
+.db {
+  top: 562px;
+  height: 12px;
+  width: 25px;
+}
+.db:hover {
+  background-color: red;
+}
+.dfb {
+  top: 515px;
+  width: 11px;
+  height: 25px;
+}
+.dfb:hover {
+  background-color: red;
+}
+.df {
+  top: 510px;
+  left: 400px;
+  width: 10px;
+  height: 35px;
+}
+.show {
+  display: block;
+  background-color: white;
+}
+.away {
+  display: block;
+  background-color: grey;
+  opacity: 0.5;
+}
+.hide {
+  display: none;
+}
+/* Text & Data Buttons */
+#data button {
+  margin-bottom: 10px;
+}
+#bname {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+#bloc {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+#date {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Login page */
+hr {
+  border-top: 2px solid;
+  margin-bottom: 20px;
+}
+#background {
+  height: 100vh;
+  background-image: url("https://pics.freeartbackgrounds.com/midle/Blue_Boat_Background-37.jpg");
+  background-size:100% 100vh;
+  z-index: 1;
+}
+form {
+  clear: both;
+  float: none;
+}
+
+@media (max-width: 767px) {
+  #list {
+    height: auto;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #heading {
+    height: auto;
+  }
+  #heading button {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    white-space: pre-line;
+  }
+}
